@@ -1,11 +1,12 @@
 package StrategyPattern;
 
+
 public class ModelDuck extends Duck {
 
 
     public ModelDuck() {
-        flyBehavior = new FlyBehavior.FlyNoWay();
-        quackBehavior = new QuackBehavior.Quack();
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Quack();
     }
 
 

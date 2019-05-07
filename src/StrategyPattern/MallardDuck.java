@@ -1,11 +1,14 @@
 package StrategyPattern;
 
+
 public class MallardDuck extends Duck{
 
 
     public MallardDuck(){
-        quackBehavior = new QuackBehavior.Quack();
-        flyBehavior = new FlyBehavior.FlyWithWings();
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+
+
     }
     @Override
     public void display() {

@@ -1,5 +1,7 @@
 package StrategyPattern;
 
+//Mini Duck  Simulator
+
 public class MiniDuckSimulator {
 
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class MiniDuckSimulator {
 
             Duck model = new ModelDuck();
             model.performFly();
-            model.setFlyBehavior(new FlyBehavior.FlyRocketPowered());
+            model.setFlyBehavior(new FlyRocketPowered());
             model.performFly();
             model.performQuack();
 

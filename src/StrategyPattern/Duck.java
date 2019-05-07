@@ -4,6 +4,7 @@ public abstract class Duck {
 
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
+
     public Duck() {}
 
 
@@ -11,16 +12,16 @@ public abstract class Duck {
         return flyBehavior;
     }
 
-    public void setFlyBehavior(FlyBehavior flyBehavior) {
-        this.flyBehavior = flyBehavior;
+    public void setFlyBehavior(FlyBehavior fb) {
+        this.flyBehavior = fb;
     }
 
     public QuackBehavior getQuackBehavior() {
         return quackBehavior;
     }
 
-    public void setQuackBehavior(QuackBehavior quackBehavior) {
-        this.quackBehavior = quackBehavior;
+    public void setQuackBehavior(QuackBehavior qb) {
+        this.quackBehavior = qb;
     }
 
 
