@@ -22,6 +22,11 @@ public class WeatherData implements Subject {
 
     @Override
     public void removeObserver(Observer o) {
+        int i = observers.indexOf(o);
+        if (i>0){
+            observers.remove(o);
+        }
+
 
         observers.remove(o);
 
@@ -43,6 +48,7 @@ public class WeatherData implements Subject {
         this.temperature=temperature;
         this.pressure=pressure;
         this.humidity = humidity;
+        measurementsChanged();
     }
 
 
