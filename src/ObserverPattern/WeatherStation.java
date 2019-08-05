@@ -9,6 +9,8 @@ public class WeatherStation {
 //        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
 //        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 
+//        currentDisplay.display();
+
         weatherData.setMeasurements(80, 67,30.f);
         weatherData.setMeasurements(83, 63,27.f);
         weatherData.setMeasurements(76, 69,26.f);
